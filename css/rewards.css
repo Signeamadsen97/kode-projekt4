@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.forside-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 50px;
+    background-color: #003B45;
+    color: #C1E0E4;
+    height: 40px;
+}
+
+.Rewards-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #00B5AF;
+    color: white;
+}
+
+.Rewards-side-tekst {
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 50px;
+}

@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.login-overskrift {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.login-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.login-funktion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+#brugernavn {
+    margin-bottom: 15px;
+}
+
+#password {
+    margin-bottom: 15px;
+}

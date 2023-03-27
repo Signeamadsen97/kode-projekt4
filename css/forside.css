@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.forside-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 50px;
+    background-color: #003B45;
+    color: #C1E0E4;
+    height: 40px;
+}
+
+.velkomst-tekst-forside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #00B5AF;
+    color: white;
+}
+
+.forside-tekst {
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 50px;
+}
+
+.ny-feedback-boks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    background-color: #C1E0E4;
+    padding: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+.link-til-feedback1 {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.link-til-feedback2 {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.link-til-feedback3 {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.burger-modellen {
+    width: 300px;
+    height: auto;
+    background-color: #C1E0E4;
+    padding: 20px;
+}
+
+.god-feedback {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.god-feedback-tekst {
+    margin-left: 55px;
+}
