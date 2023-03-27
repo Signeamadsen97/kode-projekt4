@@ -18,9 +18,33 @@
 }
 
 .gode-råd-til-feedback {
-    width: 800px;
-    margin-top: 100px;
     display: flex;
     flex-direction: column;
-    margin-left: 25%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #00B5AF;
+    color: white;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+}
+
+.burger-modellen {
+    width: 300px;
+    height: auto;
+    background-color: #C1E0E4;
+    padding: 20px;
+}
+
+.god-feedback {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.god-feedback-tekst {
+    margin-left: 55px;
 }
