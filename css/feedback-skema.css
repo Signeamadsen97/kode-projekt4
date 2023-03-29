@@ -4,6 +4,8 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+    font-family: 'Proxima nova', sans-serif;
+    accent-color: #003B45;
 }
 
 .forside-header {
@@ -11,10 +13,14 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 50px;
+    padding-right: 30px;
     background-color: #003B45;
     color: #C1E0E4;
     height: 40px;
+    font-weight: 600;
+}
+.forside-header .fa-solid {
+    padding-left: 20px;
 }
 
 .feedback-skema-side {
@@ -33,3 +39,15 @@
     margin-right: 300px;
     margin-top: 50px;
 }
+
+.spørgsmål {
+    margin: 0 auto;
+}
+input[type="radio"] {
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+  }
+  

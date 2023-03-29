@@ -23,6 +23,7 @@ font-style: normal;
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+    font-family: 'Proxima nova', sans-serif;
 }
 
 .forside-header {
@@ -30,13 +31,16 @@ font-style: normal;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 50px;
+    padding-right: 30px;
     background-color: #003B45;
     color: #C1E0E4;
     height: 40px;
     font-family: "proxima-nova", sans-serif;
     font-weight: 600;
     font-style: normal;
+}
+.forside-header .fa-solid {
+    padding-left: 20px;
 }
 
 .den-gode-feedback-header {
