@@ -1,3 +1,22 @@
+@import url("https://use.typekit.net/ilc5kna.css");
+
+/*BRØDTEKST
+font-family: "proxima-nova", sans-serif;
+font-weight: 400;
+font-style: normal;
+*/
+/*H1
+Proxima Nova Extrabold
+font-family: "proxima-nova", sans-serif;
+font-weight: 800;
+font-style: normal;
+*/
+/*H2
+Proxima Nova Semibold
+font-family: "proxima-nova", sans-serif;
+font-weight: 600;
+font-style: normal;
+*/
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +34,9 @@
     background-color: #003B45;
     color: #C1E0E4;
     height: 40px;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .den-gode-feedback-header {
@@ -29,7 +51,26 @@
     margin-left: 20%;
     margin-right: 20%;
     background-color: white;
-    padding: 30px;
+    padding: 100px;
     margin-top: -150px;
+    border-radius: 25px;
     line-height: 30px
+}
+
+.sådan-giver-du-bedre-feedback-overskrift {
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.sådan-giver-du-bedre-feedback-underoverskrift {
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.sådan-giver-du-bedre-feedback-tekst {
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
