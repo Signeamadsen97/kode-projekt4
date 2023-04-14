@@ -40,6 +40,7 @@ font-style: normal;
     font-weight: 600;
     font-style: normal;
 }
+
 .forside-header .fa-solid {
     padding-left: 20px;
 }
@@ -89,6 +90,7 @@ font-style: normal;
 
 .tidligere-feedback-accordion {
     background-color: white;
+    margin-top: 10px;
     width: 70%;
     height: 50px;
     border: none;
@@ -99,4 +101,11 @@ font-style: normal;
     width: 70%;
     height: 50px;
     text-align: center;
+    display: none;
+    overflow: hidden;
+}
+
+.active,
+.tidligere-feedback-indhold:hover {
+    background-color: white;
 }
