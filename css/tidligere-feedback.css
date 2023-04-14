@@ -121,9 +121,10 @@ font-style: normal;
     background-color: #003B45;
     color: white;
     margin-top: 75px;
-    height: 200px;
+    height: 250px;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 90px;
+    line-height: 35px;
 }
 
 .footer-logo {
@@ -138,4 +139,26 @@ font-style: normal;
     justify-content: center;
     background-color: #00B5AF;
     color: white;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.footer-kontakt {
+    text-align: right;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.genveje-overskrift {
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.kontakt-overskrift {
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 800;
+    font-style: normal;
 }
