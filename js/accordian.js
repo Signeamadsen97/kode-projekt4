@@ -1,5 +1,4 @@
 let elements = document.getElementsByClassName("tidligere-feedback-accordion");
-let i;
 addAcordian(elements);
 
 
