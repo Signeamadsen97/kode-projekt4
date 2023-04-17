@@ -129,11 +129,12 @@ font-style: normal;
 }
 .badge-images {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    flex-direction: column;
-    max-width: 100%;
-    padding-top: 100px;
+    justify-content: center;
+}
+.badge-images img {
+    width: 30%;
 }
 .afslut-button-wrapper {
     float: right;
@@ -152,5 +153,14 @@ font-style: normal;
     }
     .afslut-feedback-skema {
         display: inline-block;
+    }
+    .badge-images img {
+        width: 70%;
+    }
+    .badge-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
   }
