@@ -43,11 +43,190 @@
 .spørgsmål {
     margin: 0 auto;
 }
-input[type="radio"] {
+
+  hr {
+    border-right: none;
+    border-right: none;
+    border-bottom: none;
+    border-top: 3px dotted rgb(255, 255, 255);
+    width: 100%;
+  }
+  .feedback-skema-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .feedback-skema-tekst {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 30px;
+    line-height: 2;
+  }
+  /*Radio buttons*/
+  .spørgsmål-title {
+    padding-top: 80px;
+    padding-bottom: 20px;
     text-align: center;
-    display: inline-block;
+    color: #003B45;
+    font-weight: 600;
+  } 
+  fieldset {
+    border: 0;
+  }
+  .form-skema {
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
+  }
+  .radioform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .input-skema {
+    display: flex;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
     width: 80px;
     height: 80px;
+    gap: 10px;
+    border: 2px solid #003B45;
+    transition: 0.2s all linear;
+    margin-right: 5px;
+    position: relative;
+    top: 10px;
+    margin: 0 10px 0 10px;
+    cursor: pointer;
   }
+  .input-skema:checked {
+    border: 20px solid #003B45;
+    background-color: #ffffff;
+    outline: unset !important
+      /* I added this one for Edge (chromium) support */
+  }
+  label {
+    padding-top: 15px;
+    color: #003B45;
+    font-weight: 600;
+    text-align: center;
+  }
+  /*Uddybende kommentarer*/
+  .input-kommentar-wrapper {
+    padding-top: 8%;
+    padding-bottom: 5%;
+  }
+  .input-kommentar{
+    width: 100%;
+    height: auto;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #003B45;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+  }
+  .input-kommentar:focus {
+    outline: none !important;
+    border: 2px solid #00B5AF;
+  }
+  /*Knap til indsend*/
+  .input-button-wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .input-button {
+    display: flex;
+    background-color: #D67A66;
+    border: none;
+    font-size: 24px;
+    padding: 11px 20px;
+    border-radius: 5px;
+    color: white;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 900px) {
+    .input-skema {
+      width: 50px;
+      height: 50px;
+      margin: 0 10px 0 10px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .feedback-skema-wrapper{
+      margin: 0px 20px;
+    }
+    .input-skema {
+      width: 30px;
+      height: 30px;
+      margin: 0 0px 0 3px;
+    }
+    .input-skema:checked {
+      border: 10px solid #003B45;
+      background-color: #ffffff;
+      outline: unset !important
+    }
+    .feedback-skema-tekst {
+      display: none;
+    }
+  }
+
+  /*FOOTER*/
+  .footer-boks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #003B45;
+    color: white;
+    margin-top: 75px;
+    height: 250px;
+    padding-top: 50px;
+    padding-bottom: 90px;
+    line-height: 35px;
+}
+
+.footer-logo {
+    width: 130px;
+    height: auto;
+}
+
+.rights-reserved {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #00B5AF;
+    color: white;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.footer-kontakt {
+    text-align: right;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.genveje-overskrift {
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.kontakt-overskrift {
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.footer-link {
+    color: white;
+}
   

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/feedback-skema.css">
+    <script src="/kode-projekt4/js/feedbackskema.js" defer></script>
     <script src="https://kit.fontawesome.com/79bd33e4e1.js" crossorigin="anonymous"></script>
 </head>
 
@@ -18,48 +19,243 @@
     </header>
     <main>
         <div class="feedback-skema-side">
-            <h1 class="feedback-skema-overskrift">Feedback skema</h1>
-            <p class="feedback-skema-tekst">Du har nu mulighed for at give din underviser feedback på en god og
+            <h1 class="feedback-skema-overskrift">Feedback skema
+                <hr>
+            </h1>
+            <span class="feedback-skema-tekst">Du har nu mulighed for at give din underviser feedback på en god og
                 konstruktiv måde. Med din hjælp kan vi sammen blive bedre til at tilrettelægge kommende undervisning.
-                Husk den gode tone. Sammen står vi stærkere.</p>
+                Husk den gode tone.</span>
             <br>
             <p>Feedback er anonymt</p>
         </div>
-    <div class="spørgsmål">
-        <h2>Spørgsmål1</h2>
-
-        <form>
-            <label>
-                <input type=radio name="rating" value="1">
-            </label>
-            <label>
-                <input type=radio name="rating" value="2">
-            </label>
-            <label>
-                <input type=radio name="rating" value="3">
-            </label>
-            <label>
-                <input type=radio name="rating" value="4">
-            </label>
-            <label>
-                <input type=radio name="rating" value="5">
-            </label>
-            <label>
-                <input type=radio name="rating" value="6">
-            </label>
-            <label>
-                <input type=radio name="rating" value="7">
-            </label>
-            <label>
-                <input type=radio name="rating" value="8">
-            </label>
-            <label>
-                <input type=radio name="rating" value="9">
-            </label>
-        </form>
-    </div>
+        <section class="feedback-skema-wrapper">
+            <form>
+                <div class="spørgsmål-title">
+                    <h2>Hvad synes du om dagens undervisning?</h2>
+                </div>
+                <fieldset class="form-skema" id="rating1">
+                    <div class="radioform">
+                        <input class="input-skema" type=radio name="rating1" value="1">
+                        <label for="rating">
+                            Værst
+                        </label>
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating1" value="2">
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating1" value="3">
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating1" value="4">
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating1" value="5">
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating1" value="6">
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating1" value="7">
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating1" value="8">
+                    </div>
+                    <div class="radioform">
+                        <input class="input-skema" type=radio name="rating1" value="9">
+                        <label for="rating">
+                            Bedst
+                        </label>
+                    </div>
+                </fieldset>
+                <div class="spørgsmål-title">
+                    <h2>Hvordan var dit udbytte af dagens undervisning?</h2>
+                </div>
+                <fieldset class="form-skema" id="rating2">
+                    <div class="radioform">
+                        <input class="input-skema" type=radio name="rating2" value="1">
+                        <label for="rating">
+                            Lavt
+                        </label>
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating2" value="2">
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating2" value="3">
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating2" value="4">
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating2" value="5">
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating2" value="6">
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating2" value="7">
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating2" value="8">
+                    </div>
+                    <div class="radioform">
+                        <input class="input-skema" type=radio name="rating2" value="9">
+                        <label for="rating2">
+                            Højt
+                        </label>
+                    </div>
+                </fieldset>
+                <div class="spørgsmål-title">
+                    <h2>Var din underviser velforberedt til undervisningen?</h2>
+                </div>
+                <fieldset class="form-skema" id="rating3">
+                    <div class="radioform">
+                        <input class="input-skema" type=radio name="rating3" value="1">
+                        <label for="rating3">
+                            Lidt
+                        </label>
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating3" value="2">
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating3" value="3">
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating3" value="4">
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating3" value="5">
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating3" value="6">
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating3" value="7">
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating3" value="8">
+                    </div>
+                    <div class="radioform">
+                        <input class="input-skema" type=radio name="rating3" value="9">
+                        <label for="rating3">
+                            Meget
+                        </label>
+                    </div>
+                </fieldset>
+                <div class="spørgsmål-title">
+                    <h2>Hvordan oplevede du struktureringen af dagens undervisning?</h2>
+                </div>
+                <fieldset class="form-skema" id="rating4">
+                    <div class="radioform">
+                        <input class="input-skema" type=radio name="rating4" value="1">
+                        <label for="rating4">
+                            Værst
+                        </label>
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating4" value="2">
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating4" value="3">
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating4" value="4">
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating4" value="5">
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating4" value="6">
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating4" value="7">
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating4" value="8">
+                    </div>
+                    <div class="radioform">
+                        <input class="input-skema" type=radio name="rating4" value="9">
+                        <label for="rating4">
+                            Bedst
+                        </label>
+                    </div>
+                </fieldset>
+                <div class="spørgsmål-title">
+                    <h2>Hvor engageret var du i undervisningen?</h2>
+                </div>
+                <fieldset class="form-skema" id="rating5">
+                    <div class="radioform">
+                        <input class="input-skema" type=radio name="rating5" value="1">
+                        <label for="rating5">
+                            Lidt
+                        </label>
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating5" value="2">
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating5" value="3">
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating5" value="4">
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating5" value="5">
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating5" value="6">
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating5" value="7">
+                    </div>
+                    <div>
+                        <input class="input-skema" type=radio name="rating5" value="8">
+                    </div>
+                    <div class="radioform">
+                        <input class="input-skema" type=radio name="rating5" value="9">
+                        <label for="rating5">
+                            Meget
+                        </label>
+                    </div>
+                </fieldset>
+                <div class="input-kommentar-wrapper">
+                    <label for="kommentarer">Andre kommentarer til dagens undervisning</label><br>
+                    <textarea class="input-kommentar" id="input" rows="1" placeholder="Uddyb gerne"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="input-button">Indsend</button>
+                </div>
+            </form>
+        </section>
     </main>
+    <script src="/kode-projekt4/js/feedbackskemaknapper.js"></script>
+    <footer>
+        <div class="footer-boks">
+            <ul class="footer-genveje">
+                <li class="genveje-overskrift">Genveje</li>
+                <li><a href="tidligere-feedback.html" class="footer-link"> Tidligere feedback</a></li>
+                <li><a href="rewards.html" class="footer-link">Rewards</a></li>
+                <li><a href="god-feedback.html" class="footer-link">Tips til god feedback</a></li>
+                <li class="persondata">Persondata og cookies</a></li>
+            </ul>
+            <img class=" footer-logo" src="img/download.png" alt="Feedflow logo">
 
+            <ul class="footer-kontakt">
+                <li class="kontakt-overskrift">Kontakt os</li>
+                <li>23 24 25 70</li>
+                <li>email@email.dk</li>
+                <li>mandag - fredag 9 - 14:30</li>
+            </ul>
+        </div>
+
+        <div class="rights-reserved">
+            <p>© 2023 - UCL Erhvervsakademi og Professionshøjskole - All Rights Reserved</p>
+        </div>
+
+        </div>
+    </footer>
 </body>
 
 </html>
