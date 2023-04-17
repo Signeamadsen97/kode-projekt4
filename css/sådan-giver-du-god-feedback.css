@@ -80,7 +80,17 @@ font-style: normal;
     font-style: normal;
 }
 
-.illustration-2 {}
+.illustration-1 {
+    width: 300px;
+}
+
+.illustration-2 {
+    width: 300px;
+}
+
+.illustration-3 {
+    width: 300px;
+}
 
 .footer-boks {
     display: flex;
