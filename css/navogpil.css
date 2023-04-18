@@ -35,15 +35,19 @@ nav{
 }
 
 .profile-burger {
-    background-image: url('user.png'); 
-    background-size: cover;
+    display: flex;
+    justify-content: space-between;
     width: 40px; 
     height: 40px; 
     border-radius: 50%; 
     cursor: pointer;   
     margin-right: 20px;
 } 
-
+.logo {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
 #photo{
     height: 100%;
     width: 100%;
@@ -57,7 +61,6 @@ nav{
 #file{ 
     display: none;
 }
-
 #uploadbtn{
     height: 30px;
     width: 100%;
@@ -107,7 +110,6 @@ p{
     font-size: 18px;
     padding-right: 5px;
 }
-
 .nav-links{
     position: absolute;
     right: 0px;
@@ -120,6 +122,7 @@ p{
     transform: translateX(100%); 
     transition: transform 0.5s ease-in;
     width: 100%;
+    
 }
 
 .nav-links li{

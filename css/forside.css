@@ -92,7 +92,8 @@ font-style: normal;
     font-family: "proxima-nova", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    padding-top: 10px   ;
+    padding-top: 10px;
+    text-align: center;
 }
 
 .ny-feedback-indhold {
@@ -113,7 +114,6 @@ font-style: normal;
     margin-right: 20%;
     border-radius: 10px;
 }
-
 .link-til-feedback1, .link-til-feedback2,.link-til-feedback3  {
     display: flex;
     align-items: center;
@@ -216,19 +216,31 @@ div.god-feedback img {
 .footer-link {
     color: white;
 }
-@media only screen and (max-width: 1080px) {
-    .god-feedback {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        padding-top: 40px;
+@media only screen and (max-width: 600px) {
+    .ny-feedback-boks {
+        width: 90%;
+        padding: 10px 20px 10px;
+        margin-left: 20%;
+        margin-right: 20%;
+        border-radius: 10px;
     }
-    .den-gode-feedback-wrapper {
-        margin: 20px;
+    .ny-feedback-ikoner {
+        padding: 10px;
     }
-    .footer-logo {
-        width: 150px;
-        height: auto;
-    }
+  }
+  @media only screen and (max-width: 1080px) {
+  .god-feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+.den-gode-feedback-wrapper {
+    margin: 20px;
+}
+.footer-logo {
+    width: 150px;
+    height: auto;
+}
   }

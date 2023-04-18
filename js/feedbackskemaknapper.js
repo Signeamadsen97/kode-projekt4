@@ -29,7 +29,7 @@ insendSkema.addEventListener("click", (e) => {
         }
     if (fieldsetsValid) {
         formSkema.submit();
-        window.location.href = 'https://creations.mattel.com/';
+        window.location.href = 'tak.html';
     }
     }
 });

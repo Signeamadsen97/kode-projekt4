@@ -9,92 +9,98 @@
     <link rel="stylesheet" href="css/forside.css">
     <link rel="stylesheet" href="css/navogpil.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js/forside.js" defer></script>
     <script src="https://kit.fontawesome.com/79bd33e4e1.js" crossorigin="anonymous"></script>
 </head>
 
-<body> 
+<body>
+    <img class="logo" src="img/logo1.svg">
     <nav id="navbar">
-    <div id="navbar">
-        <h2 class="header-h2">Fornavn Efternavn</h2>
-    <ul class="nav-links">
-        <div class="profile">
-            <div class="profile-img">
-                <img src="img/user.png" id="photo" alt="profile-picture">
-                <input type="file" id="file">
-                <label for="file" id="uploadbtn">Vælg billede</label>
-            </div>
-            <div class="name">
-                <h3>Fornavn Efternavn</h3>
-                <p>Studerende, UCL Erhvervsakademi og <br>Proffessionshøjskole</p>
-                <p class="edit"><span class="material-symbols-outlined">edit</span>Rediger oplysninger</p>
-            </div>
+        <div id="navbar">
+            <h2 class="header-h2">Fornavn Efternavn</h2>
+            <ul class="nav-links">
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="img/user.png" id="photo" alt="profile-picture">
+                        <input type="file" id="file">
+                        <label for="file" id="uploadbtn">Vælg billede</label>
+                    </div>
+                    <div class="name">
+                        <h3>Fornavn Efternavn</h3>
+                        <p>Studerende, UCL Erhvervsakademi og <br>Proffessionshøjskole</p>
+                        <p class="edit"><span class="material-symbols-outlined">edit</span>Rediger oplysninger</p>
+                    </div>
+                </div>
+                <li><a href="forside.html">Forside</a></li>
+                <li><a href="rewards.html">Rewards</a></li>
+                <li><a href="tidligere-feedback.html">Tidligere feedback</a></li>
+                <li>
+                    <hr>
+                </li>
+                <li><a href="god-feedback.html">Tips til god feedback</a></li>
+                <li>
+                    <hr>
+                </li>
+                <li><br></li>
+                <button id="logout-btn"><span class="material-symbols-outlined">logout</span>Log ud</button>
+            </ul>
         </div>
-        <li><a href="#">Forside</a></li>
-        <li><a href="#">Rewards</a></li>
-        <li><a href="#">Tidligere feedback</a></li>
-        <li><hr></li>
-        <li><a href="#">Tips til god feedback</a></li>
-        <li><hr></li>
-        <li><br></li>
-        <button id="logout-btn"><span class="material-symbols-outlined">logout</span>Log ud</button>
-    </ul>
-    </div>
-
-    <div class="profile-burger">
-        <img src="img/user.png" id="photo2" alt="profile-picture">
-    </div>
-</nav>
+        <div class="profile-burger">
+            <img src="img/user.png" id="photo2" alt="profile-picture">
+        </div>
+    </nav>
     <main>
         <div class="velkomst-tekst-forside">
             <h1 class="forside-overskrift">Velkommen tilbage!
                 <hr class="forside-hr">
             </h1>
-            <p class="forside-tekst"> Din feedback har indflydelse på fremtidig undervisning, det tager kun mellem 1-5 minutter at udfylde. Optjen point og modtag dit reward badge.
+            <p class="forside-tekst"> Din feedback har indflydelse på fremtidig undervisning, det tager kun mellem 1-5
+                minutter at udfylde. Optjen point og modtag dit reward badge.
 
             </p>
         </div>
         <div class="ny-feedback-wrapper">
             <h2 class="ny-feedback-overskrift">Ny feedback</h2>
-            <h2 class="ny-feedback-overskrift2">Her kan du finde den nye tilgængelige feedback.</h2>
-        <div class="ny-feedback-boks">
-            <div class="ny-feedback-indhold">
-                <div class="link-til-feedback1" onclick="window.location.href='forside.html';">
-                    <div class="ny-feedback-ikoner"><i class="fa-regular fa-clock"></i> 2d 5t</div>
+            <h2 class="ny-feedback-overskrift2">Her kan du finde den nye tilgængelige feedbackskeamer</h2>
+            <div class="ny-feedback-boks">
+                <div class="ny-feedback-indhold">
+                    <div class="link-til-feedback1" onclick="window.location.href='feedback-skema.html';">
+                        <div class="ny-feedback-ikoner"><i class="fa-regular fa-clock"></i> 2d 5t</div>
                         Modul 4 - ABCD - Visuel Kommunikation
-                    <div class="ny-feedback-ikoner"><i class="fas fa-chevron-right"></i></div>
-                </div>
-                <div class="link-til-feedback2" onclick="window.location.href='forside.html';">
-                    <div class="ny-feedback-ikoner"><i class="fa-regular fa-clock"></i> 2d 5t</div>
+                        <div class="ny-feedback-ikoner"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                    <div class="link-til-feedback2" onclick="window.location.href='feedback-skema.html';">
+                        <div class="ny-feedback-ikoner"><i class="fa-regular fa-clock"></i> 2d 5t</div>
                         Modul 4 - ABCD - Content Creation
-                    <div class="ny-feedback-ikoner"><i class="fas fa-chevron-right"></i></div>
-                </div>
-                <div class="link-til-feedback3" onclick="window.location.href='forside.html';">
-                    <div class="ny-feedback-ikoner"><i class="fa-regular fa-clock"></i> 2d 5t</div>
+                        <div class="ny-feedback-ikoner"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                    <div class="link-til-feedback3" onclick="window.location.href='feedback-skema.html';">
+                        <div class="ny-feedback-ikoner"><i class="fa-regular fa-clock"></i> 2d 5t</div>
                         Modul 4 - ABCD - Designprincipper
-                    <div class="ny-feedback-ikoner"><i class="fas fa-chevron-right"></i></div>
+                        <div class="ny-feedback-ikoner"><i class="fas fa-chevron-right"></i></div>
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
         <button onclick="topFunction()" id="arrow-up"><i class="fa-solid fa-arrow-up"></i></button>
-        
+
         <div class="god-feedback">
-            <div class="den-gode-feedback-wrapper" onclick="window.location.href='forside.html';">
+            <div class="den-gode-feedback-wrapper" onclick="window.location.href='sådan-giver-du-god-feedback.html';">
                 <div class="den-gode-feedback">
                     <img src="img/graphics2.svg" alt="">
                 </div>
                 <label class="den-gode-feedback-label">Sådan giver du bedre feedback</label>
             </div>
-            <div class="den-gode-feedback-wrapper" onclick="window.location.href='forside.html';">
+            <div class="den-gode-feedback-wrapper" onclick="window.location.href='10-tips-til-feedback.html';">
                 <div class="den-gode-feedback">
                     <img src="img/graphics1.svg" alt="">
                 </div>
                 <label class="den-gode-feedback-label">10 tips til bedre feedback</label>
             </div>
-            <div class="den-gode-feedback-wrapper" onclick="window.location.href='forside.html';">
+            <div class="den-gode-feedback-wrapper" onclick="window.location.href='Sådan-tager-du-imod-feedback.html';">
                 <div class="den-gode-feedback">
                     <img src="img/graphics3.svg" alt="">
                 </div>
