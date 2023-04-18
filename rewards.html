@@ -7,23 +7,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/rewards.css">
+    <link rel="stylesheet" href="css/navogpil.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/79bd33e4e1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <p class="forside-header">
-            Fornavn Efternavn<i class="fa-solid fa-user"></i>
-        </p>
-    </header>
+
+    <nav id="navbar">
+        <img class="logo" src="img/logo1.svg" onclick="window.location.href='forside.html';">
+        <div id="navbar">
+        <span class="header-h2">Fornavn Efternavn</span>
+            <ul class="nav-links">
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="img/user.png" id="photo" alt="profile-picture">
+                        <input type="file" id="file">
+                        <label for="file" id="uploadbtn">Vælg billede</label>
+                    </div>
+                    <div class="name">
+                        <h3>Fornavn Efternavn</h3>
+                        <p>Studerende, UCL Erhvervsakademi og <br>Proffessionshøjskole</p>
+                        <p class="edit"><span class="material-symbols-outlined">edit</span>Rediger oplysninger</p>
+                    </div>
+                </div>
+                <li><a href="forside.html">Forside</a></li>
+                <li><a href="rewards.html">Rewards</a></li>
+                <li><a href="tidligere-feedback.html">Tidligere feedback</a></li>
+                <li>
+                    <hr>
+                </li>
+                <li><a href="god-feedback.html">Tips til god feedback</a></li>
+                <li>
+                    <hr>
+                </li>
+                <li><br></li>
+                <button id="logout-btn"><span class="material-symbols-outlined">logout</span>Log ud</button>
+            </ul>
+        </div>
+        <div class="profile-burger">
+            <img src="img/user.png" id="photo2" alt="profile-picture">
+        </div>
+    </nav>
+    
     <main>
         <div class="Rewards-side">
             <h1 class="Rewards-side-overskrift">Rewards</h1>
             <p class="Rewards-side-tekst">Herunder kan du se hvor mange feedback-point du mangler for at opnå dine
-                badges
+                badges.
                 Badges kan linkes til din LinkedIn profil, for at vise hvor aktiv du er til at forbedre undervisningen
-                på din uddannelse</p>
+                på din uddannelse.</p>
         </div>
+
+        <div class="badge-wrapper">
+            <img class="badge" src="img/Untitled-1.svg" alt="feedback badge feedback friend apprentice">
+            <p class="badge-tekst">Du har udfyldt <b>12 ud af 25</b> feedback skemaer!
+                <br>Du mangler kun at udfylde <b>13 mere</b> for at opnå din første badge!
+            </p>
+            <div class="badge-progress-container">
+                <div class="bar">
+                    <div id="html-bar"></div>
+                </div>
+            </div>
+        </div>
+
     </main>
     <footer>
         <div class="footer-boks">
@@ -34,7 +83,7 @@
                 <li><a href="god-feedback.html" class="footer-link">Tips til god feedback</a></li>
                 <li class="persondata">Persondata og cookies</a></li>
             </ul>
-            <img class=" footer-logo" src="img/download.png" alt="Feedflow logo">
+            <img class=" footer-logo" src="img/logo1.svg" alt="Feedflow logo">
 
             <ul class="footer-kontakt">
                 <li class="kontakt-overskrift">Kontakt os</li>
@@ -50,6 +99,9 @@
 
         </div>
     </footer>
+    <script src="js/navbar.js"></script>
+    <script src="js/arrow-up.js"></script>
+    <script src="js/stickynav.js"></script>
 </body>
 
 </html>
