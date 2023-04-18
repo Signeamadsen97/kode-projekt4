@@ -45,13 +45,18 @@ nav{
 } 
 .logo {
     position: fixed;
+    position: absolute;
     top: 0;
-    z-index: 99;
+    margin-right: 150px;
+    float: left;
+    height: 30px;
+   left: 0px;
 }
 #photo{
     height: 100%;
     width: 100%;
 }
+
 
 #photo2{
     height: 100%;
