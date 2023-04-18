@@ -60,13 +60,15 @@ font-style: normal;
     font-weight: 800;
     font-style: normal;
 }
-  .forside-hr {
+
+.forside-hr {
     border-right: none;
     border-right: none;
     border-bottom: none;
     border-top: 3px dotted rgb(255, 255, 255);
-    width: 100%;
-  }
+    width: 50%;
+}
+
 .forside-tekst {
     margin-left: 25%;
     margin-right: 25%;
@@ -76,6 +78,7 @@ font-style: normal;
     font-weight: 400;
     font-style: normal;
 }
+
 .ny-feedback-wrapper {
     display: flex;
     flex-direction: column;
@@ -83,11 +86,13 @@ font-style: normal;
     align-items: center;
     margin-top: 75px;
 }
+
 .ny-feedback-overskrift {
     font-family: "proxima-nova", sans-serif;
     font-weight: 800;
     font-style: normal;
 }
+
 .ny-feedback-overskrift2 {
     font-family: "proxima-nova", sans-serif;
     font-weight: 400;
@@ -114,7 +119,10 @@ font-style: normal;
     margin-right: 20%;
     border-radius: 10px;
 }
-.link-til-feedback1, .link-til-feedback2,.link-til-feedback3  {
+
+.link-til-feedback1,
+.link-til-feedback2,
+.link-til-feedback3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -127,6 +135,7 @@ font-style: normal;
     cursor: pointer;
     font-weight: 600;
 }
+
 .ny-feedback-ikoner {
     padding: 0px 50px 0px
 }
@@ -145,15 +154,18 @@ font-style: normal;
     margin: 0 auto;
     padding-top: 100px;
 }
+
 .god-feedback img {
     width: 350px;
     height: 250px;
     border: 25px solid #C1E0E4;
     background-color: white;
 }
+
 div.god-feedback img {
     object-fit: contain;
 }
+
 .den-gode-feedback-wrapper {
     text-align: center;
     font-family: "proxima-nova", sans-serif;
@@ -216,6 +228,7 @@ div.god-feedback img {
 .footer-link {
     color: white;
 }
+
 @media only screen and (max-width: 600px) {
     .ny-feedback-boks {
         width: 90%;
@@ -224,23 +237,27 @@ div.god-feedback img {
         margin-right: 20%;
         border-radius: 10px;
     }
+
     .ny-feedback-ikoner {
         padding: 10px;
     }
-  }
-  @media only screen and (max-width: 1080px) {
-  .god-feedback {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 40px;
 }
-.den-gode-feedback-wrapper {
-    margin: 20px;
+
+@media only screen and (max-width: 1080px) {
+    .god-feedback {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 40px;
+    }
+
+    .den-gode-feedback-wrapper {
+        margin: 20px;
+    }
+
+    .footer-logo {
+        width: 150px;
+        height: auto;
+    }
 }
-.footer-logo {
-    width: 150px;
-    height: auto;
-}
-  }
