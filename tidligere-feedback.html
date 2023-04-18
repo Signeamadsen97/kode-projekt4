@@ -2,242 +2,247 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tidligere feedback - FeedFlow</title>
-    <link rel="stylesheet" href="css/tidligere-feedback.css">
-    <link rel="stylesheet" href="css/navogpil.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="js/feedbacksidensortering.js" defer></script>
-    <script src="js/accordian.js" defer></script>   
-    <script src="https://kit.fontawesome.com/79bd33e4e1.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tidligere feedback - FeedFlow</title>
+  <link rel="stylesheet" href="css/tidligere-feedback.css">
+  <link rel="stylesheet" href="css/navogpil.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/feedbacksidensortering.js" defer></script>
+  <script src="js/accordian.js" defer></script>
+  <script src="https://kit.fontawesome.com/79bd33e4e1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <nav id="navbar">
-    <img class="logo" src="img/logo1.svg" onclick="window.location.href='forside.html';">
+    <img class="logo" src="img/logo1.svg" alt="feedflow forside" onclick="window.location.href='forside.html';">
     <div id="navbar">
-        <h2 class="header-h2">Fornavn Efternavn</h2>
-    <ul class="nav-links">
+      <h2 class="header-h2">Fornavn Efternavn</h2>
+      <ul class="nav-links">
         <div class="profile">
-            <div class="profile-img">
-                <img src="img/user.png" id="photo" alt="profile-picture">
-                <input type="file" id="file">
-                <label for="file" id="uploadbtn">Vælg billede</label>
-            </div>
-            <div class="name">
-                <h3>Fornavn Efternavn</h3>
-                <p>Studerende, UCL Erhvervsakademi og <br>Proffessionshøjskole</p>
-                <p class="edit"><span class="material-symbols-outlined">edit</span>Rediger oplysninger</p>
-            </div>
+          <div class="profile-img">
+            <img src="img/user.png" id="photo" alt="profile-picture">
+            <input type="file" id="file">
+            <label for="file" id="uploadbtn">Vælg billede</label>
+          </div>
+          <div class="name">
+            <h3>Fornavn Efternavn</h3>
+            <p>Studerende, UCL Erhvervsakademi og <br>Proffessionshøjskole</p>
+            <p class="edit"><span class="material-symbols-outlined">edit</span>Rediger oplysninger</p>
+          </div>
         </div>
         <li><a href="forside.html">Forside</a></li>
         <li><a href="rewards.html">Rewards</a></li>
         <li><a href="tidligere-feedback.html">Tidligere feedback</a></li>
-        <li><hr></li>
+        <li>
+          <hr>
+        </li>
         <li><a href="god-feedback.html">Tips til god feedback</a></li>
-        <li><hr></li>
+        <li>
+          <hr>
+        </li>
         <li><br></li>
         <button id="logout-btn"><span class="material-symbols-outlined">logout</span>Log ud</button>
-    </ul>
+      </ul>
     </div>
 
     <div class="profile-burger">
-        <img src="img/user.png" id="photo2" alt="profile-picture">
+      <img src="img/user.png" id="photo2" alt="profile-picture">
     </div>
-</nav>
-    <main>
-      <div class="velkomst-tekst-tidligere-feedback">
-        <h1 class="tidligere-feedback-overskrift">Tidligere feedback
-          <hr class="forside-hr">
-        </h1>
-        <p class="tidligere-feedback-tekst">Her kan du se tidligere feedback du har givet og hvad dine medstuderende
-          har svaret.
-          Feedback bliver slettet efter hvert semester.</p>
-      </div>
-    
-      <div id="kassen">
-        <p id="sorter">Sorter feedback</p>
-        <button id="knap1" onclick="sortElements();sorterKnapper(1);accVis(1)">Underviser</button>
-        <button id="knap2" onclick="sortElementstal();sorterKnapper(2);accVis(2)">Dato</button>
-        <button id="knap3" onclick="sortElementstitel();sorterKnapper(3);accVis(3)">Titel</button>
-      </div>
-    
-      <div class="container">
-        <button class="en besvaret-wrapper">
-          <div class="besvaret">
-            <img src="img/Billede2.png" id="ikon-besvaret">
-            <p id="hvormange">16/25</p>
-          </div>
-          <div class="besvaret-tekst">
-            <p id="dage">4 dage siden</p>
-            <p id="tekst">Modul 4 - VICI - Visuel Kommunikation </p>
-          </div>
-          <div><img src="img/Billede3.png" id="plus"></div>
-        </button>
-        <div class="tidligere-feedback-indhold">
-            <div class="tidligere-feedback-img">
-              <img src="img/Group 721.png" alt="infografik cirkeldiagram">
-              <img src="img/Group 722.png" alt="infografik cirkeldiagram">
-              <img src="img/Group 723.png" alt="infografik cirkeldiagram">
-            </div>
-        </div>
-        <button class="to besvaret-wrapper">
-          <div class="besvaret">
-            <img src="img/Billede2.png" id="ikon-besvaret">
-            <p id="hvormange">4/25</p>
-          </div>
-          <div class="besvaret-tekst">
-            <p id="dage">7 dage siden</p>
-            <p id="tekst">Modul 4 - PKC - Content Creation</p>
-          </div>
-          <div><img src="img/Billede3.png" id="plus"></div>
-        </button>
-        <div class="tidligere-feedback-indhold">
-          <div class="tidligere-feedback-img">
-            <img src="img/Group 721.png">
-            <img src="img/Group 722.png">
-            <img src="img/Group 723.png">
-          </div>
-        </div>
-        <button class="tre besvaret-wrapper">
-          <div class="besvaret">
-            <img src="img/Billede2.png" id="ikon-besvaret">
-            <p id="hvormange">22/25</p>
-          </div>
-          <div class="besvaret-tekst">
-            <p id="dage">8 dage siden</p>
-            <p id="tekst">Modul 4 - KRUT - Designsystemer</p>
-          </div>
-          <div><img src="img/Billede3.png" id="plus"></div>
-        </button>
-        <div class="tidligere-feedback-indhold">
-          <div class="tidligere-feedback-img">
-            <img src="img/Group 721.png">
-            <img src="img/Group 722.png">
-            <img src="img/Group 723.png">
-          </div>
-        </div>
-        <button class="fire besvaret-wrapper">
-          <div class="besvaret">
-            <img src="img/Billede2.png" id="ikon-besvaret">
-            <p id="hvormange">21/25</p>
-          </div>
-          <div class="besvaret-tekst">
-            <p id="dage">11 dage siden</p>
-            <p id="tekst">Modul 4 - ELHO - Workshop fra bruger til prototype</p>
-          </div>  
-          <div><img src="img/Billede3.png" id="plus"></div>
-        </button>
-        <div class="tidligere-feedback-indhold">
-          <div class="tidligere-feedback-img">
-            <img src="img/Group 721.png">
-            <img src="img/Group 722.png">
-            <img src="img/Group 723.png">
-          </div>
-        </div>
-        <button class="fem besvaret-wrapper">
-          <div class="besvaret">
-            <img src="img/Billede2.png" id="ikon-besvaret">
-            <p id="hvormange">25/25</p>
-          </div>
-          <div class="besvaret-tekst">
-            <p id="dage">12 dage siden</p>
-            <p id="tekst">Modul 4 - KMEA+JUBO - Workshop brugeren</p>
-          </div>
-          <div><img src="img/Billede3.png" id="plus"></div>
-        </button>
-        <div class="tidligere-feedback-indhold">
-          <div class="tidligere-feedback-img">
-            <img src="img/Group 721.png">
-            <img src="img/Group 722.png">
-            <img src="img/Group 723.png">
-          </div>
-        </div>
-        <button class="seks besvaret-wrapper">
-          <div class="besvaret">
-            <img src="img/Billede2.png" id="ikon-besvaret">
-            <p id="hvormange">5/25</p>
-          </div>
-          <div class="besvaret-tekst">
-            <p id="dage">13 dage siden</p>
-            <p id="tekst">Modul 4 - KMEA - SCRUM lego</p>
-          </div>
-          <div><img src="img/Billede3.png" id="plus"></div>
-        </button>
-        <div class="tidligere-feedback-indhold">
-          <div class="tidligere-feedback-img">
-            <img src="img/Group 721.png">
-            <img src="img/Group 722.png">
-            <img src="img/Group 723.png">
-          </div>
-        </div>
-        <button class="syv besvaret-wrapper">
-          <div class="besvaret">
-            <img src="img/Billede2.png" id="ikon-besvaret">
-            <p id="hvormange">7/25</p>
-          </div>
-          <div class="besvaret-tekst">
-            <p id="dage">16 dage siden</p>
-            <p id="tekst">Modul 4 - JFJE - After Effects</p>
-          </div>
-          <div><img src="img/Billede3.png" id="plus"></div>
-        </button>
-        <div class="tidligere-feedback-indhold">
-          <div class="tidligere-feedback-img">
-            <img src="img/Group 721.png">
-            <img src="img/Group 722.png">
-            <img src="img/Group 723.png">
-          </div>
-        </div>
-        <button class="otte besvaret-wrapper">
-          <div class="besvaret">
-            <img src="img/Billede2.png" id="ikon-besvaret">
-            <p id="hvormange">11/25</p>
-          </div>
-          <div class="besvaret-tekst">
-            <p id="dage">19 dage siden</p>
-            <p id="tekst">Modul 4 - JFJE - After Effects</p>
-          </div>
-          <div><img src="img/Billede3.png" id="plus"></div>
-        </button>
-        <div class="tidligere-feedback-indhold">
-          <div class="tidligere-feedback-img">
-            <img src="img/Group 721.png">
-            <img src="img/Group 722.png">
-            <img src="img/Group 723.png">
-          </div>
-        </div>
-      </div>
-      <button onclick="topFunction()" id="arrow-up"><i class="fa-solid fa-arrow-up"></i></button>
-    </main>
-    <footer>
-      <div class="footer-boks">
-          <ul class="footer-genveje">
-              <li class="genveje-overskrift">Genveje</li>
-              <li><a href="tidligere-feedback.html" class="footer-link"> Tidligere feedback</a></li>
-              <li><a href="rewards.html" class="footer-link">Rewards</a></li>
-              <li><a href="god-feedback.html" class="footer-link">Tips til god feedback</a></li>
-              <li class="persondata">Persondata og cookies</a></li>
-          </ul>
-          <img class="footer-logo" src="img/logo1.svg" alt="Feedflow logo">
+  </nav>
+  <main>
+    <div class="velkomst-tekst-tidligere-feedback">
+      <h1 class="tidligere-feedback-overskrift">Tidligere feedback
+        <hr class="forside-hr">
+      </h1>
+      <p class="tidligere-feedback-tekst">Her kan du se tidligere feedback du har givet og hvad dine medstuderende
+        har svaret.
+        Feedback bliver slettet efter hvert semester.</p>
+    </div>
 
-          <ul class="footer-kontakt">
-              <li class="kontakt-overskrift">Kontakt os</li>
-              <li>23 24 25 70</li>
-              <li>email@email.dk</li>
-              <li>mandag - fredag 9 - 14:30</li>
-          </ul>
-      </div>
+    <div id="kassen">
+      <p id="sorter">Sorter feedback</p>
+      <button id="knap1" onclick="sortElements();sorterKnapper(1);accVis(1)">Underviser</button>
+      <button id="knap2" onclick="sortElementstal();sorterKnapper(2);accVis(2)">Dato</button>
+      <button id="knap3" onclick="sortElementstitel();sorterKnapper(3);accVis(3)">Titel</button>
+    </div>
 
-      <div class="rights-reserved">
-          <p>© 2023 - UCL Erhvervsakademi og Professionshøjskole - All Rights Reserved</p>
+    <div class="container">
+      <button class="en besvaret-wrapper">
+        <div class="besvaret">
+          <img src="img/Billede2.png" id="ikon-besvaret">
+          <p id="hvormange">16/25</p>
+        </div>
+        <div class="besvaret-tekst">
+          <p id="dage">4 dage siden</p>
+          <p id="tekst">Modul 4 - VICI - Visuel Kommunikation </p>
+        </div>
+        <div><img src="img/Billede3.png" id="plus"></div>
+      </button>
+      <div class="tidligere-feedback-indhold">
+        <div class="tidligere-feedback-img">
+          <img src="img/Group 721.png" alt="infografik cirkeldiagram">
+          <img src="img/Group 722.png" alt="infografik cirkeldiagram">
+          <img src="img/Group 723.png" alt="infografik cirkeldiagram">
+        </div>
       </div>
+      <button class="to besvaret-wrapper">
+        <div class="besvaret">
+          <img src="img/Billede2.png" id="ikon-besvaret">
+          <p id="hvormange">4/25</p>
+        </div>
+        <div class="besvaret-tekst">
+          <p id="dage">7 dage siden</p>
+          <p id="tekst">Modul 4 - PKC - Content Creation</p>
+        </div>
+        <div><img src="img/Billede3.png" id="plus"></div>
+      </button>
+      <div class="tidligere-feedback-indhold">
+        <div class="tidligere-feedback-img">
+          <img src="img/Group 721.png">
+          <img src="img/Group 722.png">
+          <img src="img/Group 723.png">
+        </div>
+      </div>
+      <button class="tre besvaret-wrapper">
+        <div class="besvaret">
+          <img src="img/Billede2.png" id="ikon-besvaret">
+          <p id="hvormange">22/25</p>
+        </div>
+        <div class="besvaret-tekst">
+          <p id="dage">8 dage siden</p>
+          <p id="tekst">Modul 4 - KRUT - Designsystemer</p>
+        </div>
+        <div><img src="img/Billede3.png" id="plus"></div>
+      </button>
+      <div class="tidligere-feedback-indhold">
+        <div class="tidligere-feedback-img">
+          <img src="img/Group 721.png">
+          <img src="img/Group 722.png">
+          <img src="img/Group 723.png">
+        </div>
+      </div>
+      <button class="fire besvaret-wrapper">
+        <div class="besvaret">
+          <img src="img/Billede2.png" id="ikon-besvaret">
+          <p id="hvormange">21/25</p>
+        </div>
+        <div class="besvaret-tekst">
+          <p id="dage">11 dage siden</p>
+          <p id="tekst">Modul 4 - ELHO - Workshop fra bruger til prototype</p>
+        </div>
+        <div><img src="img/Billede3.png" id="plus"></div>
+      </button>
+      <div class="tidligere-feedback-indhold">
+        <div class="tidligere-feedback-img">
+          <img src="img/Group 721.png">
+          <img src="img/Group 722.png">
+          <img src="img/Group 723.png">
+        </div>
+      </div>
+      <button class="fem besvaret-wrapper">
+        <div class="besvaret">
+          <img src="img/Billede2.png" id="ikon-besvaret">
+          <p id="hvormange">25/25</p>
+        </div>
+        <div class="besvaret-tekst">
+          <p id="dage">12 dage siden</p>
+          <p id="tekst">Modul 4 - KMEA+JUBO - Workshop brugeren</p>
+        </div>
+        <div><img src="img/Billede3.png" id="plus"></div>
+      </button>
+      <div class="tidligere-feedback-indhold">
+        <div class="tidligere-feedback-img">
+          <img src="img/Group 721.png">
+          <img src="img/Group 722.png">
+          <img src="img/Group 723.png">
+        </div>
+      </div>
+      <button class="seks besvaret-wrapper">
+        <div class="besvaret">
+          <img src="img/Billede2.png" id="ikon-besvaret">
+          <p id="hvormange">5/25</p>
+        </div>
+        <div class="besvaret-tekst">
+          <p id="dage">13 dage siden</p>
+          <p id="tekst">Modul 4 - KMEA - SCRUM lego</p>
+        </div>
+        <div><img src="img/Billede3.png" id="plus"></div>
+      </button>
+      <div class="tidligere-feedback-indhold">
+        <div class="tidligere-feedback-img">
+          <img src="img/Group 721.png">
+          <img src="img/Group 722.png">
+          <img src="img/Group 723.png">
+        </div>
+      </div>
+      <button class="syv besvaret-wrapper">
+        <div class="besvaret">
+          <img src="img/Billede2.png" id="ikon-besvaret">
+          <p id="hvormange">7/25</p>
+        </div>
+        <div class="besvaret-tekst">
+          <p id="dage">16 dage siden</p>
+          <p id="tekst">Modul 4 - JFJE - After Effects</p>
+        </div>
+        <div><img src="img/Billede3.png" id="plus"></div>
+      </button>
+      <div class="tidligere-feedback-indhold">
+        <div class="tidligere-feedback-img">
+          <img src="img/Group 721.png">
+          <img src="img/Group 722.png">
+          <img src="img/Group 723.png">
+        </div>
+      </div>
+      <button class="otte besvaret-wrapper">
+        <div class="besvaret">
+          <img src="img/Billede2.png" id="ikon-besvaret">
+          <p id="hvormange">11/25</p>
+        </div>
+        <div class="besvaret-tekst">
+          <p id="dage">19 dage siden</p>
+          <p id="tekst">Modul 4 - JFJE - After Effects</p>
+        </div>
+        <div><img src="img/Billede3.png" id="plus"></div>
+      </button>
+      <div class="tidligere-feedback-indhold">
+        <div class="tidligere-feedback-img">
+          <img src="img/Group 721.png">
+          <img src="img/Group 722.png">
+          <img src="img/Group 723.png">
+        </div>
+      </div>
+    </div>
+    <button onclick="topFunction()" id="arrow-up"><i class="fa-solid fa-arrow-up"></i></button>
+  </main>
+  <footer>
+    <div class="footer-boks">
+      <ul class="footer-genveje">
+        <li class="genveje-overskrift">Genveje</li>
+        <li><a href="tidligere-feedback.html" class="footer-link"> Tidligere feedback</a></li>
+        <li><a href="rewards.html" class="footer-link">Rewards</a></li>
+        <li><a href="god-feedback.html" class="footer-link">Tips til god feedback</a></li>
+        <li class="persondata">Persondata og cookies</a></li>
+      </ul>
+      <img class="footer-logo" src="img/logo1.svg" alt="Feedflow logo">
 
-      </div>
+      <ul class="footer-kontakt">
+        <li class="kontakt-overskrift">Kontakt os</li>
+        <li>23 24 25 70</li>
+        <li>email@email.dk</li>
+        <li>mandag - fredag 9 - 14:30</li>
+      </ul>
+    </div>
+
+    <div class="rights-reserved">
+      <p>© 2023 - UCL Erhvervsakademi og Professionshøjskole - All Rights Reserved</p>
+    </div>
+
+    </div>
   </footer>
   <script src="js/navbar.js"></script>
   <script src="js/arrow-up.js"></script>
