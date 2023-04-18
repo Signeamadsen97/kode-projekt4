@@ -23,21 +23,37 @@
 }
 
 
-.Rewards-side {
+.velkomst-tekst-forside {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 35px;
+    padding-bottom: 35px;
     background-color: #00B5AF;
     color: white;
 }
 
-.Rewards-side-tekst {
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-top: 50px;
+.forside-overskrift {
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+  .forside-hr {
+    border-right: none;
+    border-right: none;
+    border-bottom: none;
+    border-top: 3px dotted rgb(255, 255, 255);
+    width: 100%;
+  }
+.forside-tekst {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 25px;
+    text-align: center;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .badge-wrapper {
@@ -122,7 +138,7 @@
 }
 
 .footer-logo {
-    width: 130px;
+    width: 200px;
     height: auto;
 }
 
