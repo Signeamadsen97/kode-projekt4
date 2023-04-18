@@ -71,7 +71,7 @@ font-style: normal;
     font-style: normal;
 }
 
-.tidligere-feedback-boks {
+.container {
     margin-top: 100px;
     display: flex;
     flex-direction: column;
@@ -82,7 +82,7 @@ font-style: normal;
     margin-right: 25%;
     padding-top: 20px;
     padding-bottom: 20px;
-    border-radius: 25px;
+    border-radius: 6px;
     font-family: "proxima-nova", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -90,21 +90,27 @@ font-style: normal;
 
 .tidligere-feedback-accordion {
     background-color: white;
-    margin-top: 10px;
+  
     width: 70%;
-    height: 50px;
-    border: none;
+    height: 45px;
+    
+
 }
 
 .tidligere-feedback-indhold {
     background-color: white;
     width: 70%;
-    height: 50px;
+    height: 90px;
     text-align: center;
     display: none;
     overflow: hidden;
+    margin-top: -18px;
+    border-radius: 6px;
+    
 }
-
+.tidligere-feedback-indhold p{
+    margin-top: 20px;
+}
 .active,
 .tidligere-feedback-indhold:hover {
     background-color: white;
@@ -163,6 +169,94 @@ font-style: normal;
     font-style: normal;
 }
 
-.footer-link {
-    color: white;
+
+
+
+
+
+#kassen{
+    display: flex;
+    flex-direction: column;
+  margin-left: 68%;
+    margin-top: 42px;
+    position:absolute
+  }
+ #sorter{
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #003B45;
+ }
+  #knap1, #knap2, #knap3{
+  height: 33px;
+  width: 132px;
+  align-items: start;
+  text-decoration: none;
+ border: 0px;
+  background-color: rgb(247, 246, 246);
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  color: #6e6e6e;
+  
+  }
+  
+  #knap1, #knap2, #knap3    :active { border-style: outset;}
+  
+  
+  
+  .en, .to, .tre, .fire, .fem, .seks, .syv, .otte {
+    background-color: white;
+    margin-top: 10px;
+    width: 70%;
+    height: 50px;
+    border-radius: 6px;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+    border: none;
+    margin-bottom: 10px;
+    color: #003B45;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  #ikon-besvaret{
+position: absolute;
+display: flex;
+margin-left: 15px;
+scale: 0.6;
+
+margin-top: -3px;
+  }
+  #hvormange{
+    position: absolute;
+    display: flex;
+    margin-left: 15px;
+
+    margin-top: 32px;    
+      }
+    
+    #plus{
+      
+      display: flex;
+      margin-top: 10px;
+align-items: flex-end;
+    scale: 0.8;
+    margin-right: 15px;
+
+
+        }
+#dage{
+    display: flex;
+    margin-left: 70px;
+    justify-self: center;
+    align-self: center;
+    
+}
+#tekst{
+    margin-top: 15px;
+    
 }
