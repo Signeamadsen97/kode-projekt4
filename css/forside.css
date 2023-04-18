@@ -49,8 +49,8 @@ font-style: normal;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 35px;
+    padding-bottom: 35px;
     background-color: #00B5AF;
     color: white;
 }
@@ -60,20 +60,39 @@ font-style: normal;
     font-weight: 800;
     font-style: normal;
 }
-
+  .forside-hr {
+    border-right: none;
+    border-right: none;
+    border-bottom: none;
+    border-top: 3px dotted rgb(255, 255, 255);
+    width: 100%;
+  }
 .forside-tekst {
     margin-left: 25%;
     margin-right: 25%;
-    margin-top: 50px;
+    margin-top: 25px;
+    text-align: center;
     font-family: "proxima-nova", sans-serif;
     font-weight: 600;
     font-style: normal;
 }
-
+.ny-feedback-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+}
 .ny-feedback-overskrift {
     font-family: "proxima-nova", sans-serif;
-    font-weight: 600;
+    font-weight: 800;
     font-style: normal;
+}
+.ny-feedback-overskrift2 {
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding-top: 10px   ;
 }
 
 .ny-feedback-indhold {
@@ -87,31 +106,29 @@ font-style: normal;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 30px;
     background-color: #C1E0E4;
-    padding: 50px;
+    padding: 30px 60px 30px;
     margin-left: 20%;
     margin-right: 20%;
-    border-radius: 25px;
+    border-radius: 10px;
 }
 
-.link-til-feedback1 {
+.link-til-feedback1, .link-til-feedback2,.link-til-feedback3  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: white;
-    padding: 20px;
-    margin-bottom: 10px;
+    padding: 25px 40px 25px;
+    margin-bottom: 25px;
     margin-top: 10px;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
 }
-
-.link-til-feedback2 {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 10px;
-}
-
-.link-til-feedback3 {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 10px;
+.ny-feedback-ikoner {
+    padding: 0px 50px 0px
 }
 
 .burger-modellen {
@@ -123,13 +140,26 @@ font-style: normal;
 
 .god-feedback {
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-around;
-    margin-top: 100px;
+    margin: 0 auto;
+    padding-top: 100px;
 }
-
-.god-feedback-tekst {
-    margin-left: 55px;
+.god-feedback img {
+    width: 350px;
+    height: 250px;
+    border: 25px solid #C1E0E4;
+    background-color: white;
+}
+div.god-feedback img {
+    object-fit: contain;
+}
+.den-gode-feedback-wrapper {
+    text-align: center;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .footer-boks {
@@ -148,7 +178,7 @@ font-style: normal;
 }
 
 .footer-logo {
-    width: 130px;
+    width: 200px;
     height: auto;
 }
 
@@ -186,3 +216,19 @@ font-style: normal;
 .footer-link {
     color: white;
 }
+@media only screen and (max-width: 1080px) {
+    .god-feedback {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 40px;
+    }
+    .den-gode-feedback-wrapper {
+        margin: 20px;
+    }
+    .footer-logo {
+        width: 150px;
+        height: auto;
+    }
+  }

@@ -38,13 +38,14 @@
     margin-left: 300px;
     margin-right: 300px;
     margin-top: 50px;
+    text-align: center;
 }
 
 .spørgsmål {
     margin: 0 auto;
 }
 
-  hr {
+  .forside-hr {
     border-right: none;
     border-right: none;
     border-bottom: none;

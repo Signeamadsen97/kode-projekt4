@@ -6,21 +6,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/feedback-skema.css">
-    <script src="/kode-projekt4/js/feedbackskema.js" defer></script>
+    <link rel="stylesheet" href="/css/feedback-skema.css">
+    <link rel="stylesheet" href="/css/navogpil.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/js/feedbackskema.js" defer></script>
     <script src="https://kit.fontawesome.com/79bd33e4e1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <p class="forside-header">
-            Fornavn Efternavn<i class="fa-solid fa-user"></i>
-        </p>
-    </header>
+    <nav id="navbar">
+        <div id="navbar">
+            <h2 class="header-h2">Fornavn Efternavn</h2>
+        <ul class="nav-links">
+            <div class="profile">
+                <div class="profile-img">
+                    <img src="img/user.png" id="photo" alt="profile-picture">
+                    <input type="file" id="file">
+                    <label for="file" id="uploadbtn">Vælg billede</label>
+                </div>
+                <div class="name">
+                    <h3>Fornavn Efternavn</h3>
+                    <p>Studerende, UCL Erhvervsakademi og <br>Proffessionshøjskole</p>
+                    <p class="edit"><span class="material-symbols-outlined">edit</span>Rediger oplysninger</p>
+                </div>
+            </div>
+            <li><a href="#">Forside</a></li>
+            <li><a href="#">Rewards</a></li>
+            <li><a href="#">Tidligere feedback</a></li>
+            <li><hr></li>
+            <li><a href="#">Tips til god feedback</a></li>
+            <li><hr></li>
+            <li><br></li>
+            <button id="logout-btn"><span class="material-symbols-outlined">logout</span>Log ud</button>
+        </ul>
+        </div>
+    
+        <div class="profile-burger">
+            <img src="/img/user.png" id="photo2" alt="profile-picture">
+        </div>
+    </nav>
     <main>
         <div class="feedback-skema-side">
             <h1 class="feedback-skema-overskrift">Feedback skema
-                <hr>
+                <hr class="forside-hr">
             </h1>
             <span class="feedback-skema-tekst">Du har nu mulighed for at give din underviser feedback på en god og
                 konstruktiv måde. Med din hjælp kan vi sammen blive bedre til at tilrettelægge kommende undervisning.
@@ -229,8 +259,9 @@
                 </div>
             </form>
         </section>
+        <button onclick="topFunction()" id="arrow-up"><i class="fa-solid fa-arrow-up"></i></button>
     </main>
-    <script src="/kode-projekt4/js/feedbackskemaknapper.js"></script>
+    <script src="/js/feedbackskemaknapper.js"></script>
     <footer>
         <div class="footer-boks">
             <ul class="footer-genveje">
@@ -240,7 +271,7 @@
                 <li><a href="god-feedback.html" class="footer-link">Tips til god feedback</a></li>
                 <li class="persondata">Persondata og cookies</a></li>
             </ul>
-            <img class=" footer-logo" src="img/download.png" alt="Feedflow logo">
+            <img class=" footer-logo" src="img/logo1.svg" alt="Feedflow logo">
 
             <ul class="footer-kontakt">
                 <li class="kontakt-overskrift">Kontakt os</li>
@@ -256,6 +287,9 @@
 
         </div>
     </footer>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/arrow-up.js"></script>
+    <script src="/js/stickynav.js"></script>
 </body>
 
 </html>

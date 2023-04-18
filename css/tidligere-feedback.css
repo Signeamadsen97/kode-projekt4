@@ -90,11 +90,8 @@ font-style: normal;
 
 .tidligere-feedback-accordion {
     background-color: white;
-  
     width: 70%;
     height: 45px;
-    
-
 }
 
 .tidligere-feedback-indhold {
@@ -106,7 +103,6 @@ font-style: normal;
     overflow: hidden;
     margin-top: -18px;
     border-radius: 6px;
-    
 }
 .tidligere-feedback-indhold p{
     margin-top: 20px;
@@ -115,7 +111,6 @@ font-style: normal;
 .tidligere-feedback-indhold:hover {
     background-color: white;
 }
-
 
 
 .footer-boks {

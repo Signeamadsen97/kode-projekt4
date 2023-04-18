@@ -25,7 +25,14 @@ font-style: normal;
     text-decoration: none;
     box-sizing: border-box;
 }
-
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C1E0E4;
+    width: 1000px;
+    height: 600px;
+}
 .login-overskrift {
     display: flex;
     flex-direction: column;
