@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navogpil.css">
+    <link rel="stylesheet" href="feedbackskema.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/79bd33e4e1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="navbar">
+        <ul class="nav-links">
+            <div class="profile">
+                <div class="profile-img">
+                    <img src="images/user.png" id="photo" alt="profile-picture">
+                    <input type="file" id="file">
+                    <label for="file" id="uploadbtn">Vælg billede</label>
+                </div>
+                <div class="name">
+                    <h3>Fornavn Efternavn</h3>
+                    <p>Studerende, UCL Erhvervsakademi og <br>Proffessionshøjskole</p>
+                    <p class="edit"><span class="material-symbols-outlined">edit</span>Rediger oplysninger</p>
+                </div>
+            </div>
+            <li><a href="#">Forside</a></li>
+            <li><a href="#">Rewards</a></li>
+            <li><a href="#">Tidligere feedback</a></li>
+            <li><hr></li>
+            <li><a href="#">Tips til god feedback</a></li>
+            <li><hr></li>
+            <li><br></li>
+            <button id="logout-btn"><span class="material-symbols-outlined">logout</span>Log ud</button>
+        </ul>
+        </div>
+
+        <div class="profile-burger">
+            <img src="images/user.png" id="photo2" alt="profile-picture">
+        </div>
+    </nav>
+
+    <div class="velkomst-tekst-forside">
+        <h1 class="forside-overskrift">Velkommen tilbage!</h1>
+        <p class="forside-tekst">Her kan du skabe overblik over ny feedback fra din underviser. Din feedback har
+            indflydelse på fremtidig undervisning, det tager kun mellem 1-5 minutter at udfylde. Optjen point og
+            modtag dit reward badge.</p>
+    </div>
+    <div class="ny-feedback-boks">
+        <h2 class="ny-feedback-overskrift">Ny feedback</h2>
+        <div class="ny-feedback-indhold">
+            <p class="link-til-feedback1">Ny feedback - Visuel kommunikation - 24/3-23 - forventet tidsforbrug 5 min
+            </p>
+            <p class="link-til-feedback2">Ny feedback - fra bruger til prototype - 20/3-23 - forventet tidsforbrug 7
+                min</p>
+            <p class="link-til-feedback3">Ny feedback - idégenerering - 19/3-23 - forventet tidsforbrug 5 min</p>
+        </div>
+    </div>
+
+
+
+    <button onclick="topFunction()" id="arrow-up"><i class="fa-solid fa-arrow-up"></i></button>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="god-feedback">
+        <div class="den-gode-feedback1">
+            <img class="burger-modellen" src="img/download.png" alt="den gode feedback - brugermetoden">
+            <p class="god-feedback-tekst">5 råd til at give bedre feedback</p>
+        </div>
+
+        <div class="den-gode-feedback2">
+            <img class="burger-modellen" src="img/download.png" alt="den gode feedback - brugermetoden">
+            <p class="god-feedback-tekst">Den gode feedback</p>
+        </div>
+
+        <div class="den-gode-feedback3">
+            <img class="burger-modellen" src="img/download.png" alt="den gode feedback - brugermetoden">
+            <p class="god-feedback-tekst">5 råd til at give bedre feedback</p>
+        </div>
+    </div>
+   
+    <script src="navbar.js"></script>
+    <script src="arrow-up.js"></script>
+    <script src="stickynav.js"></script>
+    
+</body>
+</html>
