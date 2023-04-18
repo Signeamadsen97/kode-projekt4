@@ -16,6 +16,7 @@ nav{
     font-family: "proxima-nova", sans-serif;
     font-weight: 600;
     font-style: normal;
+    z-index: 99;
 }
 
 .profile{
