@@ -90,14 +90,14 @@ font-style: normal;
 
 .tidligere-feedback-accordion {
     background-color: white;
-    width: 70%;
-    height: 45px;
+    width: 80%;
+    height: 20%;
 }
 
 .tidligere-feedback-indhold {
     background-color: white;
-    width: 70%;
-    height: 90px;
+    width: 80%;
+    height: 150px;
     text-align: center;
     display: none;
     overflow: hidden;
@@ -111,8 +111,6 @@ font-style: normal;
 .tidligere-feedback-indhold:hover {
     background-color: white;
 }
-
-
 .footer-boks {
     display: flex;
     flex-direction: row;
@@ -129,10 +127,9 @@ font-style: normal;
 }
 
 .footer-logo {
-    width: 130px;
+    width: 200px;
     height: auto;
 }
-
 .rights-reserved {
     display: flex;
     flex-direction: column;
@@ -164,11 +161,56 @@ font-style: normal;
     font-style: normal;
 }
 
+.footer-link {
+    color: white;
+}
+@media only screen and (max-width: 1080px) {
+    .god-feedback {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 40px;
+    }
+    .den-gode-feedback-wrapper {
+        margin: 20px;
+    }
+    .footer-logo {
+        width: 150px;
+        height: auto;
+    }
+  }
 
+.rights-reserved {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #00B5AF;
+    color: white;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
+.footer-kontakt {
+    text-align: right;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
+.genveje-overskrift {
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
 
-
+.kontakt-overskrift {
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
 #kassen{
     display: flex;
     flex-direction: column;
@@ -187,25 +229,23 @@ font-style: normal;
   width: 132px;
   align-items: start;
   text-decoration: none;
- border: 0px;
+  border: 0px;
   background-color: rgb(247, 246, 246);
   font-family: "proxima-nova", sans-serif;
   font-weight: 400;
   font-style: normal;
   text-align: left;
   color: #6e6e6e;
-  
-  }
-  
-  #knap1, #knap2, #knap3    :active { border-style: outset;}
-  
-  
-  
-  .en, .to, .tre, .fire, .fem, .seks, .syv, .otte {
+
+}
+#knap1, #knap2, #knap3 :active {
+    border-style: outset;
+}
+.en, .to, .tre, .fire, .fem, .seks, .syv, .otte {
     background-color: white;
     margin-top: 10px;
-    width: 70%;
-    height: 50px;
+    width: 80%;
+    height: 20%;
     border-radius: 6px;
     font-family: "proxima-nova", sans-serif;
     font-weight: 550;
@@ -216,42 +256,29 @@ font-style: normal;
     font-size: 16px;
     display: flex;
     justify-content: space-between;
-
-  }
-  #ikon-besvaret{
-position: absolute;
-display: flex;
-margin-left: 15px;
-scale: 0.6;
-
-margin-top: -3px;
-  }
-  #hvormange{
-    position: absolute;
-    display: flex;
-    margin-left: 15px;
-
-    margin-top: 32px;    
-      }
-    
-    #plus{
-      
-      display: flex;
-      margin-top: 10px;
-align-items: flex-end;
-    scale: 0.8;
-    margin-right: 15px;
-
-
-        }
-#dage{
-    display: flex;
-    margin-left: 70px;
-    justify-self: center;
-    align-self: center;
-    
+    z-index: 99;
+    cursor: pointer;
 }
-#tekst{
-    margin-top: 15px;
-    
+.besvaret-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.besvaret-tekst {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.besvaret {
+    margin-left: 20px;
+}
+#ikon-besvaret {
+    height: 20px;
+}
+#plus {
+    align-items: flex-end;
+    height: 15px;
+    margin-right: 15px;
 }

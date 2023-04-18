@@ -52,7 +52,6 @@ font-style: normal;
 .den-gode-feedback-tekst {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-left: 20%;
     margin-right: 20%;
     background-color: white;
@@ -86,10 +85,12 @@ font-style: normal;
 
 .illustration-2 {
     width: 300px;
+    float: right;
 }
 
 .illustration-3 {
-    width: 300px;
+    width: 500px;
+    
 }
 
 .footer-boks {
@@ -108,10 +109,21 @@ font-style: normal;
 }
 
 .footer-logo {
-    width: 130px;
+    width: 200px;
     height: auto;
 }
-
+@media only screen and (max-width: 1080px) {
+    .footer-logo {
+        width: 150px;
+        height: auto;
+    }
+    .den-gode-feedback-tekst {
+        margin-left: 0%;
+        margin-right: 0%;
+        padding: 10%;
+        text-align: left;
+    }
+    }
 .rights-reserved {
     display: flex;
     flex-direction: column;
