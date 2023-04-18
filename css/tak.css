@@ -118,14 +118,19 @@ font-style: normal;
 }
 
 .afslut-feedback-skema {
-    background-color: #003B45;
+    background-color: #C1E0E4;
     border: none;
     font-size: 24px;
+    font-weight: 600;
     padding: 11px 35px;
     border-radius: 5px;
-    color: white;
+    color: black;
     cursor: pointer;
     margin-left: 50px;
+}
+.afslut-feedback-skema:hover {
+    background-color: #00B5AF;
+    color: white; 
 }
 .badge-images {
     display: flex;
@@ -137,9 +142,66 @@ font-style: normal;
     width: 30%;
 }
 .afslut-button-wrapper {
-    float: right;
     bottom: 0;
+    right: 0;
+    margin-bottom: 30px;
+    margin-right: 30px;
     position: fixed;
+}
+
+.footer-boks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #003B45;
+    color: white;
+    margin-top: 75px;
+    height: 250px;
+    padding-top: 50px;
+    padding-bottom: 90px;
+    line-height: 35px;
+}
+
+.footer-logo {
+    width: 200px;
+    height: auto;
+}
+
+.rights-reserved {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #00B5AF;
+    color: white;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.footer-kontakt {
+    text-align: right;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.genveje-overskrift {
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.kontakt-overskrift {
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.footer-link {
+    color: white;
 }
 @media only screen and (max-width: 900px) {
     .badge-wrapper {
@@ -162,5 +224,9 @@ font-style: normal;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    .footer-logo {
+        width: 150px;
+        height: auto;
     }
   }

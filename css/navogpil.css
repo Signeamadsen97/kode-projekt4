@@ -1,4 +1,5 @@
 @import url("https://use.typekit.net/ilc5kna.css");
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
 *{
     margin: 0px;
     padding: 0px;
@@ -46,11 +47,17 @@ nav{
 .logo {
     position: fixed;
     position: absolute;
-    top: 0;
+    top: 10;
     margin-right: 150px;
     float: left;
-    height: 30px;
-   left: 0px;
+    height: 40px;
+    left: 10px;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .header-h2 {
+      display: none;
+    }
 }
 #photo{
     height: 100%;
