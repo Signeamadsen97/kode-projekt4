@@ -192,10 +192,15 @@
 }
 
 .footer-logo {
-    width: 130px;
-    height: auto;
+  width: 200px;
+  height: auto;
 }
-
+@media only screen and (max-width: 1080px) {
+  .footer-logo {
+      width: 150px;
+      height: auto;
+  }
+}
 .rights-reserved {
     display: flex;
     flex-direction: column;
