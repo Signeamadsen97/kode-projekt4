@@ -25,48 +25,60 @@ font-style: normal;
     text-decoration: none;
     box-sizing: border-box;
 }
+body {
+    background-color: azure;
+}
+.logo-login {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 100px;
+}
 .login-wrapper {
+    font-family: "Proxima nova", sans-serif;
+    line-height: 1.4;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    height: 600px;
-    margin: 50px 30px;
-    box-shadow: -25px 7px 35px 2px rgba(0,0,0,0.26);
-    -webkit-box-shadow: -25px 7px 35px 2px rgba(0,0,0,0.26);
-    -moz-box-shadow: -25px 7px 35px 2px rgba(0,0,0,0.26);
-}
-.login-overskrift {
-    margin-top: 150px;
-    font-family: "proxima-nova", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-    text-align: center;
-}
-.login-logo {
-    background-color: #C1E0E4;
-    height: 100%;
-    width: 25%;
-    margin-right: 150px;
-    box-shadow: -25px 7px 35px 2px rgba(0,0,0,0.26);
-    -webkit-box-shadow: -25px 7px 35px 2px rgba(0,0,0,0.26);
-    -moz-box-shadow: -25px 7px 35px 2px rgba(0,0,0,0.26);
-}
-.login-overskrift2 {
-    font-family: "proxima-nova", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    background-color: #C1E0E4;
-    border-radius: 15px;
-    text-align: center;
+    margin-top: 8%;
+  }
+  .login-container {
+    width: 60%;
+    margin-top: 100px;
+    margin: auto;
+    padding: 36px 48px 48px 48px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  }
+.login-input {
+    display: flex;
+    flex-direction: column;
 }
 .login-funktion {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-right: 200px;
 }
+.login-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+  }
+  
+  .login-form label {
+    display: block;
+    margin-bottom: 8px;
+    margin-left: 5px;
+    font-weight: 600;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 1.2rem;
+    border-radius: 9px;
+    border: 2px solid #C1E0E4;
+  }
 #brugernavn {
     margin-bottom: 15px;
 }
@@ -74,12 +86,25 @@ font-style: normal;
 #password {
     margin-bottom: 15px;
 }
-
+.login-overskrift {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.login {
+    text-align: center;
+}
 .login-knap {
     background-color: #C1E0E4;
-    font-family: "proxima-nova", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    padding-left: 10px;
-    padding-right: 10px;
+    border: none;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 11px 35px;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.login-knap:hover {
+    background-color: #00B5AF;
+    color: white; 
 }

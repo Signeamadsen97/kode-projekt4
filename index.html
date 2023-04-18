@@ -7,26 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UCL-feedback - loginside</title>
     <link rel="stylesheet" href="/css/index.css">
-    <script src="/js/index.js" defer></script>
+    <script src="js/index.js" defer></script>
     <script src="https://kit.fontawesome.com/79bd33e4e1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <main>
+        <img class="logo-login" src="img/logo1 dark.svg">
         <div class="login-wrapper">
-            <div class="login-logo">
-            </div>
-            <div>
-                <div class="login-funktion">
-                    <h1 class="login-overskrift">Velkommen til FeedFlow!</h1>
-                    <h2 class="login-overskrift2">Log på med Underviser- og studerendelogin WAYF</h2>
+            <div class="login-container">
+                <h1 class="login-overskrift">Velkommen til FeedFlow</h1>
+                <form class="login-form">
                     <div class="login-input">
-                        <input type="text" id="brugernavn">
-                        <input type="text" id="password">
+                        <label for="brugernavn">E-mail</label>
+                        <input type="text" id="brugernavn" placeholder="Studiemail">
                     </div>
-                    <div class="login">
-                        <button onclick="window.location.href='forside.html';" class="login-knap">login</button>
+                    <div class="login-input">
+                        <label for="password">Kodeord</label>
+                        <input type="text" id="password" placeholder="Kodeord">
                     </div>
+                </form>
+                <div class="login">
+                    <button onclick="window.location.href='forside.html';" class="login-knap">Log på med Underviser- og studerendelogin WAYF</button>
                 </div>
             </div>
         </div>
