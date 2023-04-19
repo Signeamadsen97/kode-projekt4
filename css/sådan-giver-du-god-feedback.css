@@ -88,9 +88,50 @@ font-style: normal;
     float: right;
 }
 
+.god-feedback {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.god-feedback img {
+    width: 350px;
+    height: 250px;
+    border: 25px solid #C1E0E4;
+    background-color: white;
+}
+
+div.god-feedback img {
+    object-fit: contain;
+}
+
+.den-gode-feedback-wrapper {
+    text-align: center;
+    font-family: "proxima-nova", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1080px) {
+    .god-feedback {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 40px;
+    }
+
+    .den-gode-feedback-wrapper {
+        margin: 20px;
+    }
+}
+
 .illustration-3 {
     width: 500px;
-    
+
 }
 
 .footer-boks {
@@ -112,18 +153,21 @@ font-style: normal;
     width: 200px;
     height: auto;
 }
+
 @media only screen and (max-width: 1080px) {
     .footer-logo {
         width: 150px;
         height: auto;
     }
+
     .den-gode-feedback-tekst {
         margin-left: 0%;
         margin-right: 0%;
         padding: 10%;
         text-align: left;
     }
-    }
+}
+
 .rights-reserved {
     display: flex;
     flex-direction: column;
