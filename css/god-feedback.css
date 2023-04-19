@@ -184,3 +184,10 @@ div.god-feedback img {
 .footer-link {
     color: white;
 }
+.tips-hr{
+    border-right: none;
+    border-right: none;
+    border-bottom: none;
+    border-top: 3px dotted rgb(255, 255, 255);
+    width: 455px;
+}

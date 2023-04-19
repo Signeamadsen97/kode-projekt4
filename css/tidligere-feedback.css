@@ -355,3 +355,10 @@ font-style: normal;
         transform: scale(0.6);
     }
 }
+.tf-hr{
+    border-right: none;
+    border-right: none;
+    border-bottom: none;
+    border-top: 3px dotted rgb(255, 255, 255);
+    width: 270px;
+}

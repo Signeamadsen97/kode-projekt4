@@ -22,7 +22,13 @@
     padding-left: 20px;
 }
 
-
+.rw-hr{
+    border-right: none;
+    border-right: none;
+    border-bottom: none;
+    border-top: 3px dotted rgb(255, 255, 255);
+    width: 130px;
+}
 .velkomst-tekst-forside {
     display: flex;
     flex-direction: column;
