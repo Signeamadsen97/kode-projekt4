@@ -4,9 +4,9 @@ knap1.style.display = "none";
 knap3.style.display = "none";
 
 function accVis(hvisKlikket) {
-  let knap1 = document.getElementById("knap1");
-  let knap2 = document.getElementById("knap2");
-  let knap3 = document.getElementById("knap3");
+  var knap1 = document.getElementById("knap1");
+  var knap2 = document.getElementById("knap2");
+  var knap3 = document.getElementById("knap3");
 
   if (hvisKlikket === 1) {
     if (knap2.style.display === "none" && knap3.style.display === "none") {
@@ -69,44 +69,43 @@ kassenKnapper.insertBefore(knap2, knap1.nextSibling);
 
 
 function sortElements() {
-  const container = document.querySelector('.container');
-  const elementss = Array.from(container.children);
+  var container = document.querySelector('.container');
+  var elementss = Array.from(container.children);
 
   elementss.sort((a, b) => {
-    const order = ['fire', 'syv', 'otte', 'fem', 'seks', 'tre', 'to', 'en'];
+    var order = ['fire', 'syv', 'otte', 'fem', 'seks', 'tre', 'to', 'en'];
     return order.indexOf(a.classList[0]) - order.indexOf(b.classList[0]);
   });
 
-  container.innerHTML = '';
-
+  
   elementss.forEach(element => container.appendChild(element));
 }
 
 function sortElementstal() {
-  const container = document.querySelector('.container');
-  const elementss = Array.from(container.children);
+  var container = document.querySelector('.container');
+  var elementss = Array.from(container.children);
 
   elementss.sort((a, b) => {
-    const order = ['en', 'to', 'tre', 'fire', 'fem', 'seks', 'syv', 'otte'];
+    var order = ['en', 'to', 'tre', 'fire', 'fem', 'seks', 'syv', 'otte'];
     return order.indexOf(a.classList[0]) - order.indexOf(b.classList[0]);
   });
 
-  container.innerHTML = '';
+ 
 
   elements.forEach(element => container.appendChild(element));
 }
 
 
 function sortElementstitel() {
-  const container = document.querySelector('.container');
-  const elementss = Array.from(container.children);
+  var container = document.querySelector('.container');
+  var elementss = Array.from(container.children);
 
   elementss.sort((a, b) => {
-    const order = ['syv', 'otte', 'to', 'tre', 'seks','en', 'fem', 'fire'];
+    var order = ['syv', 'otte', 'to', 'tre', 'seks','en', 'fem', 'fire'];
     return order.indexOf(a.classList[0]) - order.indexOf(b.classList[0]);
   });
 
-  container.innerHTML = '';
+
 
   elementss.forEach(element => container.appendChild(element));
 }
