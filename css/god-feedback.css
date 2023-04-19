@@ -72,13 +72,15 @@ font-style: normal;
     font-size: 16px;
     margin-top: 20px;
 }
+
 .forside-hr {
     border-right: none;
     border-right: none;
     border-bottom: none;
     border-top: 3px dotted rgb(255, 255, 255);
-    width: 100%;
-  }
+    width: 70%;
+}
+
 .god-feedback {
     display: flex;
     align-items: center;
@@ -86,15 +88,18 @@ font-style: normal;
     margin: 0 auto;
     padding-top: 100px;
 }
+
 .god-feedback img {
     width: 350px;
     height: 250px;
     border: 25px solid #C1E0E4;
     background-color: white;
 }
+
 div.god-feedback img {
     object-fit: contain;
 }
+
 .den-gode-feedback-wrapper {
     text-align: center;
     font-family: "proxima-nova", sans-serif;
@@ -102,6 +107,7 @@ div.god-feedback img {
     font-weight: 600;
     cursor: pointer;
 }
+
 @media only screen and (max-width: 1080px) {
     .god-feedback {
         display: flex;
@@ -110,10 +116,12 @@ div.god-feedback img {
         justify-content: space-between;
         padding-top: 40px;
     }
+
     .den-gode-feedback-wrapper {
         margin: 20px;
     }
-  }
+}
+
 .footer-boks {
     display: flex;
     flex-direction: row;
@@ -133,12 +141,13 @@ div.god-feedback img {
     width: 200px;
     height: auto;
 }
+
 @media only screen and (max-width: 1080px) {
     .footer-logo {
         width: 150px;
         height: auto;
     }
-  }
+}
 
 
 .rights-reserved {
