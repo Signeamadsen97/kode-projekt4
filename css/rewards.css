@@ -66,6 +66,7 @@
     margin-right: 20%;
     background-color: white;
     padding: 100px;
+    padding-top: 70px;
     line-height: 30px;
 }
 
@@ -90,7 +91,7 @@
 }
 
 .skills:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .bar {
@@ -106,8 +107,8 @@
 }
 
 .badge-tekst {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 10px;
     text-align: center;
 }
 
