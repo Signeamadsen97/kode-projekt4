@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 
 <head>
     <meta charset="UTF-8">
@@ -17,10 +17,10 @@
 
 <body>
     <nav id="navbar">
-        <img class="logo" src="img/logo1.svg" alt="feedflow forside" onclick="window.location.href='forside.html';">
-        <div id="navbar">
-            <h2 class="header-h2">Fornavn Efternavn</h2>
-            <ul class="nav-links">
+        <img class="logo" src="img/logo1.svg" alt="feedflow logo" onclick="window.location.href='forside.html';">
+        <div>
+            <span class="header-h2">Fornavn Efternavn</span>
+            <div class="nav-links">
                 <div class="profile">
                     <div class="profile-img">
                         <img src="img/user.png" id="photo" alt="profile-picture">
@@ -33,20 +33,23 @@
                         <p class="edit"><span class="material-symbols-outlined">edit</span>Rediger oplysninger</p>
                     </div>
                 </div>
-                <li><a href="forside.html">Forside</a></li>
-                <li><a href="rewards.html">Rewards</a></li>
-                <li><a href="tidligere-feedback.html">Tidligere feedback</a></li>
-                <li>
-                    <hr>
-                </li>
-                <li><a href="god-feedback.html">Tips til god feedback</a></li>
-                <li>
-                    <hr>
-                </li>
-                <li><br></li>
+                <ul>
+                    <li><a href="forside.html">Forside</a></li>
+                    <li><a href="rewards.html">Rewards</a></li>
+                    <li><a href="tidligere-feedback.html">Tidligere feedback</a></li>
+                    <li>
+                        <hr>
+                    </li>
+                    <li><a href="god-feedback.html">Tips til god feedback</a></li>
+                    <li>
+                        <hr>
+                    </li>
+                    <li><br></li>
+
+                </ul>
                 <button id="logout-btn" onclick="window.location.href='index.html';"><span
                         class="material-symbols-outlined">logout</span>Log ud</button>
-            </ul>
+            </div>
         </div>
 
         <div class="profile-burger">
@@ -89,7 +92,7 @@
                 <li><a href="tidligere-feedback.html" class="footer-link"> Tidligere feedback</a></li>
                 <li><a href="rewards.html" class="footer-link">Rewards</a></li>
                 <li><a href="god-feedback.html" class="footer-link">Tips til god feedback</a></li>
-                <li class="persondata">Persondata og cookies</a></li>
+                <li class="persondata">Persondata og cookies</li>
             </ul>
             <img class=" footer-logo" src="img/logo1.svg" alt="Feedflow logo">
 
@@ -105,7 +108,6 @@
             <p>© 2023 - UCL Erhvervsakademi og Professionshøjskole - All Rights Reserved</p>
         </div>
 
-        </div>
     </footer>
     <script src="js/navbar.js"></script>
     <script src="js/arrow-up.js"></script>
