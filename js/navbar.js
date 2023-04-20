@@ -10,7 +10,7 @@ const navSlide = () => {
     if (!isNavVisible) { // Opdateret betingelse til at tjekke, om menuen er synlig eller ej
       nav.classList.add('nav-active');
       navLinks.forEach((link, index) => {
-        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.2}s`;
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 8 + 0.2}s`;
       });
     } else {
       nav.classList.remove('nav-active');
@@ -78,7 +78,7 @@ file.addEventListener('change', function(){
   const choosedFile = this.files[0];
 
   if (choosedFile) {
-    const reader = new FileReader(); // FileReader er en foruddefineret funktion i JavaScript
+    const reader = new FileReader(); 
 
     reader.addEventListener('load', function()
     {
