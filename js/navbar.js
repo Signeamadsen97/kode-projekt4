@@ -9,13 +9,11 @@ const navSlide = () => {
     // Funktion til at vise/skjule menuen
     if (!isNavVisible) { // Opdateret betingelse til at tjekke, om menuen er synlig eller ej
       nav.classList.add('nav-active');
-      burger.classList.add('toggle');
       navLinks.forEach((link, index) => {
         link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.2}s`;
       });
     } else {
       nav.classList.remove('nav-active');
-      burger.classList.remove('toggle');
       navLinks.forEach((link) => {
         link.style.animation = '';
       });
@@ -74,18 +72,22 @@ imgDiv.addEventListener('mouseleave', function()
 });
 
 
-//når vi vælger et foto at uploade
+//når der vælges profilbillede
+file.addEventListener('change', function(){
 
-file.addEventListener('change', function
-(file) {
-    // Tjek om der er valgt en fil
-    if (file.value) {
-      // Simulerer en filupload ved at ændre tekstindholdet på knappen
-      uploadBtn.innerHTML = `<i class="fas fa-check"></i> Fil uploadet`;
-    } else {
-      // Hvis ingen fil er valgt, nulstil tekstindholdet på knappen
-      uploadBtn.innerHTML = `Upload foto`;
-    }
+  const choosedFile = this.files[0];
+
+  if (choosedFile) {
+    const reader = new FileReader(); // FileReader er en foruddefineret funktion i JavaScript
+
+    reader.addEventListener('load', function()
+    {
+      img.setAttribute('src', reader.result);
+    });
+    
+    reader.readAsDataURL(choosedFile);
+
+  }
 });
 
 
