@@ -191,3 +191,10 @@ div.god-feedback img {
     border-top: 3px dotted rgb(255, 255, 255);
     width: 455px;
 }
+
+@media only screen and (max-width: 600px) {
+    .tips-hr {
+        width: 250px;
+
+    }
+  }
