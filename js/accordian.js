@@ -1,6 +1,6 @@
 let elements = document.querySelectorAll('.en, .to, .tre, .fire, .fem, .seks, .syv, .otte');
 
-let i;
+
 addAcordian(elements);
 
 
@@ -11,7 +11,7 @@ function addAcordian(coll) {
         coll[i].addEventListener("click", function () {
             this.classList.toggle("active");
             let content = this.nextElementSibling;
-            
+
             if (content.style.display === "block") {
                 content.style.display = "none";
             } else {
